@@ -1479,7 +1479,7 @@ func TestFileExists(t *testing.T) {
 	False(t, FileExists(mockT, "random_file"))
 
 	mockT = new(testing.T)
-	False(t, FileExists(mockT, "../_codegen"))
+	False(t, FileExists(mockT, "../assert"))
 
 	var tempFiles []string
 
@@ -1513,7 +1513,7 @@ func TestNoFileExists(t *testing.T) {
 	True(t, NoFileExists(mockT, "non_existent_file"))
 
 	mockT = new(testing.T)
-	True(t, NoFileExists(mockT, "../_codegen"))
+	True(t, NoFileExists(mockT, "../assert"))
 
 	var tempFiles []string
 
@@ -1564,7 +1564,7 @@ func TestDirExists(t *testing.T) {
 	False(t, DirExists(mockT, "non_existent_dir"))
 
 	mockT = new(testing.T)
-	True(t, DirExists(mockT, "../_codegen"))
+	True(t, DirExists(mockT, "../assert"))
 
 	var tempFiles []string
 
@@ -1598,7 +1598,7 @@ func TestNoDirExists(t *testing.T) {
 	True(t, NoDirExists(mockT, "non_existent_dir"))
 
 	mockT = new(testing.T)
-	False(t, NoDirExists(mockT, "../_codegen"))
+	False(t, NoDirExists(mockT, "../assert"))
 
 	var tempFiles []string
 

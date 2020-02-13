@@ -389,7 +389,7 @@ func (f *testFunc) CommentWithoutT(receiver string) string {
 var headerTemplate = `{{ with .BuildTags }}// +build {{ . }}
 {{ end }}
 /*
-* CODE GENERATED AUTOMATICALLY WITH github.com/nikandfor/testify/_codegen
+* CODE GENERATED AUTOMATICALLY WITH github.com/nikandfor/testify/.codegen
 * THIS FILE MUST NOT BE EDITED BY HAND
 */
 
