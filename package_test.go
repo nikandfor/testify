@@ -3,7 +3,7 @@ package testify
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/nikandfor/testify/assert"
 )
 
 func TestImports(t *testing.T) {

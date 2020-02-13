@@ -1,7 +1,7 @@
 // +build go1.13
 
 /*
-* CODE GENERATED AUTOMATICALLY WITH github.com/stretchr/testify/_codegen
+* CODE GENERATED AUTOMATICALLY WITH github.com/nikandfor/testify/_codegen
 * THIS FILE MUST NOT BE EDITED BY HAND
  */
 

@@ -10,8 +10,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
+	"github.com/nikandfor/testify/assert"
+	"github.com/nikandfor/testify/require"
 )
 
 var allTestsFilter = func(_, _ string) (bool, error) { return true, nil }

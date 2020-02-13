@@ -28,7 +28,7 @@ import (
 )
 
 var (
-	pkg       = flag.String("assert-path", "github.com/stretchr/testify/assert", "Path to the assert package")
+	pkg       = flag.String("assert-path", "github.com/nikandfor/testify/assert", "Path to the assert package")
 	includeF  = flag.Bool("include-format-funcs", false, "include format functions such as Errorf and Equalf")
 	outputPkg = flag.String("output-package", "", "package for the resulting code")
 	tmplFile  = flag.String("template", "", "What file to load the function template from")
@@ -389,7 +389,7 @@ func (f *testFunc) CommentWithoutT(receiver string) string {
 var headerTemplate = `{{ with .BuildTags }}// +build {{ . }}
 {{ end }}
 /*
-* CODE GENERATED AUTOMATICALLY WITH github.com/stretchr/testify/_codegen
+* CODE GENERATED AUTOMATICALLY WITH github.com/nikandfor/testify/_codegen
 * THIS FILE MUST NOT BE EDITED BY HAND
 */
 
